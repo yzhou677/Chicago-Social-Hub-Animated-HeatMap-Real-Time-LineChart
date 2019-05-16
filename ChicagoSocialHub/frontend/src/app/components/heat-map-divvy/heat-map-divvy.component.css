@@ -1,0 +1,14 @@
+@import 'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css';
+agm-map {
+    height: 500px;
+}
+#google-map-container {
+    position: relative;
+}
+
+#google-map, #date {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    font-size: 20px;
+}

@@ -1,0 +1,42 @@
+<button mat-raised-button color="primary" routerLink="/home" id="home-button">
+    Home
+    &nbsp; &nbsp; &nbsp;
+    <mat-icon>home</mat-icon>
+</button>
+&nbsp;&nbsp;&nbsp;
+<div ngbDropdown class="d-inline-block">
+    <button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>1 Hour</button>
+    <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+        <button class="dropdown-item" (click)= "playOneHourAnimation()">1 Hour </button>
+        <button class="dropdown-item" (click)= "playOneDayAnimation()"> 24 Hours</button>
+    </div>
+</div>
+&nbsp;&nbsp;&nbsp;
+<button mat-raised-button color="primary" (click)="stopPlayAnimate()" id="stop-button" style="opacity: 1">
+    Stop
+    &nbsp; &nbsp; &nbsp;
+    <mat-icon>stop</mat-icon>
+</button>
+&nbsp;&nbsp;&nbsp;
+<button mat-raised-button color="primary" (click)="playAnimateAgain()" id="play-button" style="opacity: 0">
+    Play
+    &nbsp; &nbsp; &nbsp;
+    <mat-icon>play_arrow</mat-icon>
+</button>
+
+<button mat-raised-button color="primary" routerLink="/home" id="back-button" style="float: right;margin-right: 10px">
+    Back
+    &nbsp; &nbsp; &nbsp;
+    <mat-icon>arrow_back</mat-icon>
+</button>
+<p id = "loading-sign"> Loading Heatmap...</p>
+
+<div id="google-map-container">
+    <div id="google-map">
+      <agm-map [(latitude)]="location.lat" [(longitude)]="location.lng" [(zoom)]="location.zoom" [disableDefaultUI]="true"
+        [zoomControl]="false" [gestureHandling]="none" (mapReady)="onMapLoad($event)">
+      </agm-map>
+    </div>
+    <div id="date">
+    </div>
+  </div>

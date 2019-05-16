@@ -1,0 +1,20 @@
+table {
+    width: 100%;
+}
+
+.mat-column-right {
+    text-align: center;
+}
+
+agm-map {
+    height: 500px;
+}
+
+.find-another-place-button {
+    margin-left: 10px;
+}
+
+#back-button {
+    float: right;
+    margin-right: 10px
+}

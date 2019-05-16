@@ -1,0 +1,50 @@
+<body>
+
+  <button mat-raised-button color="primary" routerLink="/find" id="home-button">
+    Home
+    &nbsp; &nbsp; &nbsp;
+    <mat-icon>home</mat-icon>
+  </button>
+
+  <div ngbDropdown class="d-inline-block">
+    <button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>Time Range</button>
+    <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+      <button class="dropdown-item" (click)="subscribeIntervalOneHour()">1 Hour </button>
+      <button class="dropdown-item" (click)="subscribeIntervalOneDay()"> 24 Hours</button>
+      <button class="dropdown-item" (click)="subscribeIntervalSevenDay()"> 7 Days</button>
+    </div>
+  </div>
+
+  <button mat-raised-button color="primary" (click)="subscribeIntervalSMA()" id="sma-chart">
+    1 Hour SMA Chart
+    &nbsp; &nbsp; &nbsp;
+    <mat-icon>bar_chart</mat-icon>
+  </button>
+
+  <button mat-raised-button color="primary" (click)="subscribeIntervalSMAOneDay()" id="sma-chart">
+      1 Day SMA Chart
+      &nbsp; &nbsp; &nbsp;
+      <mat-icon>bar_chart</mat-icon>
+    </button>
+
+  <button mat-raised-button color="primary" routerLink="/list_of_stations" id="back-button">
+    Back
+    &nbsp; &nbsp; &nbsp;
+    <mat-icon>arrow_back</mat-icon>
+  </button>
+
+  <p id="time-title">{{ timeTitle }}</p>
+
+  <br>
+  <svg width="1500" height="500"></svg>
+
+  <!-- <ul>
+    <li *ngFor="let station of stationSelected$ | async">
+      {{ station.id }}
+      {{ station.stationName }}
+      {{ station.availableDocks }}
+      {{ station.lastCommunicationTime }}
+    </li>
+  </ul> -->
+
+</body>

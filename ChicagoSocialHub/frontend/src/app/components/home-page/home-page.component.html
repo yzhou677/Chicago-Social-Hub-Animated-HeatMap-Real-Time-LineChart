@@ -1,0 +1,22 @@
+<body>
+  <img src="../../assets/image/Chicago_background.jpg">
+  <div style="text-align:center;">
+    <button mat-raised-button color="primary" routerLink="/find" class=find-button>
+      Places
+      &nbsp; &nbsp; &nbsp;
+      <mat-icon>search</mat-icon>
+    </button>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <button mat-raised-button color="primary" (click)="findEntireCityStations()" class=heat-map-divvy-button>
+      Divvy HeatMap
+      &nbsp; &nbsp; &nbsp;
+      <mat-icon>search</mat-icon>
+    </button>
+  </div>
+  <br><br>
+
+  <div text="blue" style="text-align:center;" id = "loading">
+    <mat-spinner style="margin:0 auto;" mode="indeterminate"></mat-spinner>
+    <p>loading...</p>
+  </div>
+</body>
