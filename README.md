@@ -1,5 +1,5 @@
 # Chicago-Social-Hub-Animated-HeatMap-Real-Time-LineChart
-This is the version one of Chicago Social Hub website with Animated HeatMap of entire chicago area divvy stations avaiable docks for last 24 hours and last one hour and the real time updating line chart of divvy station avaiable docks for last 1 hour, 24 hours and 7 days.
+This is the version one of Chicago Social Hub website with Animated HeatMap of entire chicago area divvy stations avaiable docks for last 24 hours and last one hour and the real time updating line chart of divvy station available docks for last 1 hour, 24 hours and 7 days.
 
 <img src="https://github.com/yzhou677/Chicago-Social-Hub-Animated-HeatMap-Real-Time-LineChart/blob/master/Architecture.png" width="850px"/>
 
